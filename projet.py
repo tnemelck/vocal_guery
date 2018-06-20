@@ -22,7 +22,7 @@ def __wav2mfcc(path):
     return mfcc_feat
 
 
-def dir2mfcc(path):
+def dir2mfcc(path = "./"):
     path = abspath(path)
     lst = glob(path + "/*.wav")
     d_test, d_train = {}, {}
